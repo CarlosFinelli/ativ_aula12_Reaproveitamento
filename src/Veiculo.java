@@ -1,10 +1,15 @@
+import java.util.ArrayList;
+
 public class Veiculo
 {
-    public String ano;
-    public String cor;
-    public String modelo;
-    public String placa;
+    private String ano;
+    private String cor;
+    private String modelo;
+    private String placa;
+    private int tipo;
+    private Double valorVeiculo;
 
+    ArrayList listVeiculo = new ArrayList();
     public String getAno()
     {
         return ano;
@@ -43,5 +48,25 @@ public class Veiculo
     public void setPlaca(String placa)
     {
         this.placa = placa;
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+
+    public Double getValor() {
+        return valorVeiculo;
+    }
+
+    public void setValor(Double valorVeiculo) {
+        this.valorVeiculo = valorVeiculo;
+    }
+
+    public void venderVeiculo(Veiculo veiculo) {
+
     }
 }
